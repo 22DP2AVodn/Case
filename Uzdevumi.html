@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartiņas ar Hover Efektiem</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Food Type <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Pizza</a></li>
+                    <li><a href="#">Burger</a></li>
+                    <li><a href="#">Fries</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-info"></i>About Us</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+        </ul>
+        <button class="toggle-mode" onclick="toggleDarkMode()">
+            <i class="fas fa-adjust"></i>Dark Mode
+        </button>
+    </nav>
+
+    <section class="cards-container">
+        <div class="card">
+            <img src="https://cdn.shopify.com/s/files/1/0274/9503/9079/files/20220211142754-margherita-9920_5a73220e-4a1a-4d33-b38f-26e98e3cd986.jpg?v=1723650067" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>Pizza is an Italian dish typically consisting of a flat base of leavened wheat-based dough topped with tomato, cheese, and other ingredients, baked at a high temperature, traditionally in a wood-fired oven.</p>
+            <button>Uzzināt Vairāk</button>
+        </div>
+        <div class="card">
+            <img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_2560%2Cc_limit/Smashburger-recipe-120219.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <p>A hamburger, or simply a burger, is a dish consisting of fillings—usually a patty of ground meat, typically beef—placed inside a sliced bun or bread roll.</p>
+            <button>Uzzināt Vairāk</button>
+        </div>
+        <div class="card">
+            <img src="https://thesaltedpotato.com/wp-content/uploads/2022/04/twice-fried-fries-500x500.jpg" alt="Fries">
+            <h3>Fries</h3>
+            <p>French fries, chips, finger chips, french-fried potatoes, or simply fries, are batonnet or julienne-cut deep-fried potatoes of disputed origin from Belgium or France.</p>
+            <button>Uzzināt Vairāk</button>
+        </div>
+    </section>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
